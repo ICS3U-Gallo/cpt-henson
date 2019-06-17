@@ -579,7 +579,7 @@ class MyGame(arcade.Window):
                 self.player_sprite.health = 9999999999
         if win is True and self.player_sprite.center_x > 7500:
             arcade.draw_texture_rectangle(SCREEN_WIDTH/2+self.view_left, SCREEN_HEIGHT/2+self.view_bottom, SCREEN_WIDTH, SCREEN_HEIGHT, self.background)
-            arcade.draw_text("You Won!", SCREEN_WIDTH/2+self.view_left, SCREEN_HEIGHT/2+self.view_bottom, arcade.color.YELLOW, 40)
+            arcade.draw_text("You Won!", SCREEN_WIDTH/3+self.view_left, SCREEN_HEIGHT/2+self.view_bottom, arcade.color.YELLOW, 40)
 
     def update(self, delta_time):
         global JUMP_CHECK, JUMP_CLOCK, JUMP_gCLOCK, JUMP_gCHECK, fire_check, firerate_clock, SPREAD, empty, \
